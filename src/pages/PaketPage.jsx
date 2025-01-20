@@ -7,7 +7,7 @@ const PaketPage = () => {
   const navigate = useNavigate();
 
   const handleBuyClick = (kelas) => {
-    navigate("/redirect"); // Adjust the path as necessary
+    navigate("/Redirect.html"); // Adjust the path as necessary
   };
 
   return (
