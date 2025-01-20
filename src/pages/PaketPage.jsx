@@ -1,13 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { semuaKelas } from "../data/index";
 import FaqComponent from "../components/FaqComponent";
-import { useNavigate } from "react-router-dom";
 
 const PaketPage = () => {
-  const navigate = useNavigate();
-
-  const handleBuyClick = (kelas) => {
-    navigate("/Redirect.html"); // Adjust the path as necessary
+  const handleBuyClick = () => {
+    window.location.href = "/Redirect.html";
   };
 
   return (
@@ -47,7 +44,7 @@ const PaketPage = () => {
                     <p className="m-0 text-primary fw-bold">{kelas.price}</p>
                     <button
                       className="btn btn-danger rounded-1"
-                      onClick={() => handleBuyClick(kelas)} // Attach the click handler
+                      onClick={handleBuyClick}
                     >
                       {kelas.buy}
                     </button>
