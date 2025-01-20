@@ -1,12 +1,13 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { semuaKelas } from "../data/index";
 import FaqComponent from "../components/FaqComponent";
+import { useNavigate } from "react-router-dom";
 
 const PaketPage = () => {
-  // Click handler function to redirect
+  const navigate = useNavigate();
+
   const handleBuyClick = (kelas) => {
-    // Redirect to Redirect/Redirect.html
-    window.location.href = "/Redirect.html"; // Adjust the path as necessary
+    navigate("/redirect"); // Adjust the path as necessary
   };
 
   return (
@@ -15,19 +16,11 @@ const PaketPage = () => {
         <Container>
           <Row>
             <Col>
-              <h1
-                className="fw-bold text-center animate__animated
-                animate__fadeInUp animate__delay-1s"
-              >
+              <h1 className="fw-bold text-center animate__animated animate__fadeInUp animate__delay-1s">
                 Semua Paket
               </h1>
-              <p
-                className="text-center animate__animated
-                animate__fadeInUp animate__delay-1s"
-              >
-                Beberapa paket lengkap untuk pengurusan pemakaman yang kami
-                tawarkan untuk Anda dan keluarga. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
+              <p className="text-center animate__animated animate__fadeInUp animate__delay-1s">
+                Beberapa paket lengkap untuk pengurusan pemakaman yang kami tawarkan untuk Anda dan keluarga. Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </Col>
           </Row>
