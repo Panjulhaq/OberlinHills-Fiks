@@ -6,7 +6,7 @@ const PaketPage = () => {
   // Click handler function to redirect
   const handleBuyClick = (kelas) => {
     // Redirect to Redirect/Redirect.html
-    window.location.href = "../Redirect/Redirect.html"; // Adjust the path as necessary
+    window.location.href = "Redirect.html"; // Adjust the path as necessary
   };
 
   return (
